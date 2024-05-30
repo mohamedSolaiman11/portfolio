@@ -408,6 +408,18 @@ nav .fas {
     /* #header {
         background-image: url("images/me.jpg");
     } */
+
+    .name {
+        margin-top : 20px;
+    }
+
+    nav .fa-bars { /* Show hamburger icon on smaller screens */
+        display: block;
+        margin-top: 20px; /* Add top margin */
+    }
+
+
+
     .imgpro {
         width: 190px;
         height: 190px;
