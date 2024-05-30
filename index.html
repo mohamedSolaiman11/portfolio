@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portofilio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/115d442487.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="name">Mohamed <span class="suliman">Suliman.</span></h2>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portofolio">portofolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Flutter Developer</p>
+                <h1>Hi, I'm <span>Mohamed</span><br> Suliman From Egypt</h1>
+            </div>
+
+            <div class="imgpro">
+                <img src="images/p2.jpg" alt="" width="00px" height="400px">
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------about------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/meaboutme.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus nam quaerat, dolore
+                        recusandae placeat ratione ipsam alias ullam dolores repudiandae adipisci illum nemo excepturi,
+                        nisi facilis fugiat numquam minima libero.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experince')">Experinces</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tap" id="skills">
+                        <ul>
+                            <li><span>Designing Mobile Apps</span><br>UI&UX</li>
+                            <li><span>Designing Logo </span><br>Web App Development</li>
+                            <li><span>Building Apis </span><br>UI&UX</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experince">
+                        <ul>
+                            <li><span>Experinces Mobile Apps</span><br>UI&UX</li>
+                            <li><span>Designing Logo </span><br>Web App Development</li>
+                            <li><span>Building Apis </span><br>UI&UX</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Education Mobile Apps</span><br>UI&UX</li>
+                            <li><span>Designing Logo </span><br>Web App Development</li>
+                            <li><span>Building Apis </span><br>UI&UX</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------services--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-android fa-beat-fade"></i>
+                    <h2>Flutter Developer</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam modi officiis, corporis laboriosam
+                        saepe sequi facilis. Impedit vitae quidem ratione voluptates qui voluptatum, nam architecto
+                        veniam, deleniti autem nulla praesentium!</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store fa-beat-fade"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam modi officiis, corporis laboriosam
+                        saepe sequi facilis. Impedit vitae quidem ratione voluptates qui voluptatum, nam architecto
+                        veniam, deleniti autem nulla praesentium!</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code fa-beat-fade"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam modi officiis, corporis laboriosam
+                        saepe sequi facilis. Impedit vitae quidem ratione voluptates qui voluptatum, nam architecto
+                        veniam, deleniti autem nulla praesentium!</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------portofolio----------------- -->
+    <div id="portofolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/phone1.jpeg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around thw world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/phone2.jpeg">
+                    <div class="layer">
+                        <h3>U_Learning App</h3>
+                        <p>The app connects you to the talented people around thw world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/phone3.jpeg">
+                    <div class="layer">
+                        <h3>News App</h3>
+                        <p>The app connects you to the talented people around thw world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- --------------------------------contact--------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> apboo5000@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +201014250577</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mohamed-solaiman-a2b9921b4"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61550103592753&mibextid=ZbWKwL"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/Apboo99"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images\CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/xnqkrjyg" method="POST">
+
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copy Right 2023 <i class="fa-regular fa-copyright"></i> Made By Mohamed Solaiman.All Right Reserved.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tap");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tap");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
