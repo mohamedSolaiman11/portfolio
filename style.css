@@ -410,12 +410,12 @@ nav .fas {
     } */
 
     .name {
-        margin-top : 20px;
+        margin-top : 10px;
     }
 
     nav .fa-bars { /* Show hamburger icon on smaller screens */
         display: block;
-        margin-top: 20px; /* Add top margin */
+        margin-top: 10px; /* Add top margin */
     }
 
 
