@@ -1,4 +1,4 @@
-﻿document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     // الحصول على الزر
     const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
