@@ -260,7 +260,7 @@ nav ul li {
 
     .services-list div {
         background: #262626;
-        padding: 40px;
+        padding: 70px;
         font-size: 13px;
         font-weight: 300;
         border-radius: 50px;
@@ -507,6 +507,25 @@ form .btn2 {
         transform: translateY(-20px); /* التحرك لأعلى */
     }
 }
+
+/* ------------------- تصميم للأجهزة اللوحية ------------------- */
+@media only screen and (max-width: 1024px) {
+    .header-text {
+        font-size: 26px;
+    }
+
+    .header-text h1 {
+        font-size: 50px;
+    }
+
+    .imgpro {
+        right: 50px;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
 /* ---------------------------------------css for small screen----- */
 nav .fas {
     display: none;
@@ -525,7 +544,6 @@ nav .fas {
     }
     #header {
         height: 65vh; /* تقليل ارتفاع الـ header على الشاشات الصغيرة */
-        width: 100vw;
     }
 
     /*----------------------menu icon------------*/
@@ -613,40 +631,34 @@ nav .fas {
 
 
 
-    .imgpro {
-        width: 160px;
-        height: 160px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        border-radius: 50%;
-        background: linear-gradient(to right bottom, #212428, #16181c);
-        margin-top:180px;
-        position: absolute;
-        right: 110px;
-        animation: slideInFromRight 3s ease-out forwards, floatUpDown 3s ease-in-out infinite 3s; /* حركة من اليمين مع حركة لأعلى وأسفل */
-    }
+        .imgpro {
+            position: relative;
+            left:2px;
+            margin-top: 120px;
+            width: 200px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
 
         .imgpro img {
             width: 100%;
             height: 100%;
-
             object-fit: cover;
         }
 
-        .header-text {
+    .header-text {
+            font-size: 20px;
             margin-top: 10%;
-            text-align:center
-        }
-        .header-text p {
-            font-size: 22px;
         }
 
         .header-text h1 {
-            font-size: 25px;
-            margin-bottom:0;
+            font-size: 20px;
         }
+                .header-text p {
+                    font-size: 22px;
+                }
 
     nav .fas {
         display: block;
@@ -694,34 +706,35 @@ nav .fas {
     #about {
        margin-top:220px;
        text-align:center
-        color: #ababab;
+       color: #ababab;
+       display: flex; /* استخدام flexbox */
+       justify-content: center; /* محاذاة أفقية للوسط */
+       align-items: center; /* محاذاة عمودية للوسط */
+       flex-direction: column; /* ترتيب العناصر عموديًا */
+       height: 100vh; /* ملء الشاشة كاملة */
+
     }
 
-
-    .about-col-1,
-    .about-col-2 {
-        flex-basis:60%;
-        font-size: 14px;
-    }
 
     .about-col-1 {
         display: flex;
+        align-items:center;
         justify-content: center; /* محاذاة أفقيًا في الوسط */
         flex-direction: column; /* ترتيب العناصر عموديًا */
-        height: calc(50vh - 0px); /* تخصيص ارتفاع مع الأخذ في الاعتبار المسافات العليا والسفلى */
-        margin: 35px 0; /* المسافة فوق الصورة */
+   /*     height: calc(50vh - 0px); /* تخصيص ارتفاع مع الأخذ في الاعتبار المسافات العليا والسفلى */
+   /*     margin: 0px 0px 30px 0px; /* المسافة فوق الصورة */
 
         margin-top:60px;
+        margin-left: auto;
+        margin-right: auto;
     }
         .about-col-1 img {
-            width: 300px; /* تعيين العرض التلقائي لضبط الصورة بشكل مناسب */
-            height: 400px; /* تعيين الارتفاع التلقائي لضبط الصورة بشكل مناسب */
-            max-width: 200px; /* تأكد من أن الصورة لا تتجاوز عرض العمود */
-            max-height: 400px; /* تأكد من أن الصورة لا تتجاوز ارتفاع العمود */
+            max-width:150%;
+            width: 200px; /* تعيين العرض التلقائي لضبط الصورة بشكل مناسب */
+            height: auto; /* تعيين الارتفاع التلقائي لضبط الصورة بشكل مناسب */
             border-radius: 15px; /* تعيين شكل الزوايا إذا لزم الأمر */
             object-fit: cover;
-            margin-left:45px;
-            
+
 
         }
     .about-col-2 h1{
@@ -753,9 +766,6 @@ nav .fas {
     }
 
 
-    #services{
-        padding: 0 0;
-    }
     .container{
         text-align:center;
     }
@@ -764,7 +774,7 @@ nav .fas {
     /* -------------------------services---------------- */
     #services {
         padding:0px 5px 0px 0px;
-        margin:0px 20px;
+        margin:110px 10px 10px 10px;
     }
 
     .services-list {
