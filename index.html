@@ -18,7 +18,7 @@
                     Mohamed <span class="suliman">Suliman</span></h1>
                     <ul id="sidemenu">
                         <li><a href="#header"><i class="fa fa-home"></i> <span>Home</span></a></li>
-                        <li><a href="#about"><i class="fa fa-user"></i>  <span>  About</span></a></li>
+                        <li><a href="#about"><i class="fa fa-user"></i> <span>About</span></a></li>
                         <li><a href="#services"><i class="fa fa-briefcase"></i> <span>Services</span></a></li>
                         <li><a href="#portfolio"><i class="fa fa-image"></i> <span>Portfolio</span></a></li>
                         <li><a href="#contact"><i class="fa fa-envelope"></i> <span>Contact</span></a></li>
@@ -240,6 +240,16 @@
         }
     </script>
 
+<!--    <script>-->
+<!--        var sidemenu = document.getElementById("sidemenu");-->
+<!--        function openmenu() {-->
+<!--            sidemenu.style.right = "0";-->
+<!--        }-->
+<!--        function closemenu() {-->
+<!--            sidemenu.style.right = "-200px";-->
+<!--        }-->
+<!--    </script>-->
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // الحصول على عناصر الشريط الجانبي والأيقونة
@@ -249,30 +259,18 @@
             const closeMenuIcon = document.querySelector('.fa-xmark');
             const sidemenuLinks = sidemenu.querySelectorAll('a');
 
-            // فتح القائمة
-            function openmenu() {
-                sidemenu.style.right = '0';
-                profilePicture.style.right = 'calc(270px - 100px)'; // تحريك الصورة لليسار عند فتح القائمة
-            }
+    function openmenu() {
+        sidemenu.style.right = '0';
+        profilePicture.style.left = 'calc(85px - 80px)'; // تحريك الصورة لليسار عند فتح القائمة
+    }
 
-            // إغلاق القائمة
-            function closemenu() {
-                sidemenu.style.right = '-200px';
-                profilePicture.style.right = '85px'; // إعادة الصورة إلى مكانها الطبيعي عند غلق القائمة
-            }
+    function closemenu() {
+        sidemenu.style.right = '-200px';
+        profilePicture.style.left = '85px'; // إعادة الصورة إلى مكانها الطبيعي عند غلق القائمة
+    }
 
-            // ربط أيقونة الفتح والإغلاق بوظائفها
-            openMenuIcon.addEventListener('click', function () {
-                if (sidemenu.style.right !== '0px') {
-                    openmenu();
-                }
-            });
-
-            closeMenuIcon.addEventListener('click', function () {
-                if (sidemenu.style.right === '0px') {
-                    closemenu();
-                }
-            });
+    openMenuIcon.addEventListener('click', openmenu);
+    closeMenuIcon.addEventListener('click', closemenu);
 
             // إغلاق الشريط الجانبي عند الضغط على أي رابط
             sidemenuLinks.forEach(link => {
