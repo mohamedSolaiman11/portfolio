@@ -527,6 +527,73 @@ nav .fas {
         height: 65vh; /* تقليل ارتفاع الـ header على الشاشات الصغيرة */
         width: 100vw;
     }
+
+    /*----------------------menu icon------------*/
+    /* تعديل الشريط الجانبي */
+    #sidemenu {
+        position:fixed;
+        right: -200px;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #ffffff;
+        transition: right 3s ease;
+        z-index: 1000;
+        padding: 50px 0px 0px 5px;
+        border-radius: 10px;         /* زوايا مستديرة للقائمة */
+
+    }
+
+    #sidemenu ul {
+        list-style-type: none;
+        padding: 0;
+
+    }
+
+    #sidemenu li {
+        margin: 5px 0px 0px 0px;
+
+    }
+
+    #sidemenu a {
+        margin-left:7px;
+        color: #ff004f;
+        font-size: 18px;
+        display: flex;              /* استخدام Flexbox */
+        align-items: center;        /* محاذاة العناصر عموديًا */
+        justify-content: flex-start; /* وضع الأيقونة على اليسار */
+        padding: 10px 0;            /* تباعد رأسي بين الروابط */
+        font-size: 18px;            /* حجم النص */
+        text-decoration: none;      /* إزالة التسطير من الروابط */
+        transition: color 0.3s;     /* تأثير انتقال على لون النص */
+    }
+    #sidemenu a i {
+         margin-right: 10px;
+        font-size: 16px;
+        color: #ff0066;
+    }
+    #sidemenu a span {
+        color: #333333;             /* لون النص */
+    }
+    #sidemenu a:hover {
+        color: #ff6699;             /* لون مختلف عند التمرير */
+    }
+    /* تغيير لون النص والأيقونة عند التمرير */
+    #sidemenu a:hover i {
+        color: #ff6699;             /* لون مختلف للأيقونة عند التمرير */
+    }
+    #sidemenu a:hover span {
+        color: #555555;             /* لون مختلف للنص عند التمرير */
+    }
+    #sidemenu i.fa-xmark {
+        top: 10px;
+        items-align: right;
+        cursor: pointer;
+        color: #000000;
+    }
+
+
+    /* -----------------------------------------------*/
     .container {
         padding: 10px 25px 0px 25px; /* تقليل المسافة من الجوانب */
         max-width: 768px; /* وضع حد أقصى لعرض الحاوية */
@@ -547,38 +614,38 @@ nav .fas {
 
 
     .imgpro {
-        width: 130px;
-        height: 130px;
+        width: 160px;
+        height: 160px;
         display: flex;
         align-items: center;
         justify-content: center;
         overflow: hidden;
         border-radius: 50%;
         background: linear-gradient(to right bottom, #212428, #16181c);
-        margin-top:120px;
+        margin-top:180px;
         position: absolute;
-        right: 110px;
+        right: 80px;
         animation: slideInFromRight 3s ease-out forwards, floatUpDown 3s ease-in-out infinite 3s; /* حركة من اليمين مع حركة لأعلى وأسفل */
     }
 
         .imgpro img {
             width: 100%;
             height: 100%;
+
             object-fit: cover;
         }
 
     .header-text {
-        font-size: 20px; /* تقليل حجم الخط على الشاشات الصغيرة */
-        margin-top: 100%;
-
+        margin-top: 170%;
+        margin-bottom:160px;
         text-align:center
     }
         .header-text p {
-            font-size: 20px;
+            font-size: 22px;
         }
 
         .header-text h1 {
-            font-size: 22px;
+            font-size: 25px;
             margin-bottom:0;
         }
 
@@ -626,9 +693,11 @@ nav .fas {
 
 
     #about {
+       margin-top:220px;
        text-align:center
         color: #ababab;
     }
+
 
     .about-col-1,
     .about-col-2 {
@@ -641,18 +710,18 @@ nav .fas {
         justify-content: center; /* محاذاة أفقيًا في الوسط */
         flex-direction: column; /* ترتيب العناصر عموديًا */
         height: calc(50vh - 0px); /* تخصيص ارتفاع مع الأخذ في الاعتبار المسافات العليا والسفلى */
-        margin: 0px 0; /* المسافة فوق الصورة */
+        margin: 35px 0; /* المسافة فوق الصورة */
 
         margin-top:60px;
     }
         .about-col-1 img {
-            width: 200px%; /* تعيين العرض التلقائي لضبط الصورة بشكل مناسب */
-            height: 300px; /* تعيين الارتفاع التلقائي لضبط الصورة بشكل مناسب */
-            max-width: 70%; /* تأكد من أن الصورة لا تتجاوز عرض العمود */
-            max-height: 80%; /* تأكد من أن الصورة لا تتجاوز ارتفاع العمود */
+            width: 300px; /* تعيين العرض التلقائي لضبط الصورة بشكل مناسب */
+            height: 400px; /* تعيين الارتفاع التلقائي لضبط الصورة بشكل مناسب */
+            max-width: 200px; /* تأكد من أن الصورة لا تتجاوز عرض العمود */
+            max-height: 400px; /* تأكد من أن الصورة لا تتجاوز ارتفاع العمود */
             border-radius: 15px; /* تعيين شكل الزوايا إذا لزم الأمر */
             object-fit: cover;
-            margin-left:85px;
+            margin-left:45px;
             
 
         }
@@ -856,9 +925,9 @@ nav .fas {
 
     .scroll-to-top {
         position: fixed;
-        width: 30px;
-        height: 30px;
-        bottom: 0px;
+        width: 40px;
+        height: 40px;
+        bottom:55px;
         right: 20px;
         padding: 0 0 0px 0;
         border: none;
@@ -1038,6 +1107,8 @@ form .btn2 {
     .copyright i {
         color: #ff004f;
     }
+
+
 
 
 }
