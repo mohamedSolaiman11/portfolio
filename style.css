@@ -635,11 +635,10 @@ nav .fas {
             object-fit: cover;
         }
 
-    .header-text {
-        margin-top: 130%;
-        margin-bottom:160px;
-        text-align:center
-    }
+        .header-text {
+            margin-top: 10%;
+            text-align:center
+        }
         .header-text p {
             font-size: 22px;
         }
