@@ -624,7 +624,7 @@ nav .fas {
         background: linear-gradient(to right bottom, #212428, #16181c);
         margin-top:180px;
         position: absolute;
-        right: 80px;
+        right: 100px;
         animation: slideInFromRight 3s ease-out forwards, floatUpDown 3s ease-in-out infinite 3s; /* حركة من اليمين مع حركة لأعلى وأسفل */
     }
 
